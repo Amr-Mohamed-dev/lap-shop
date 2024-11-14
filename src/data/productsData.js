@@ -1,268 +1,229 @@
 export const productsData = [
-  // منتجات لابتوبات
   {
     id: 1,
-    title: {
-      en: "Laptop",
-      ar: "لابتوب",
-    },
-    category: {
-      en: "Laptops",
-      ar: "لابتوبات",
-    },
-    images: ["/laptops.jpg", "/laptop-alt1.jpg", "/laptop-alt2.jpg"], // مصفوفة الصور
+    title: { en: "Laptop A", ar: "لاب توب A" },
     description: {
-      en: "High-performance laptop for work and play.",
-      ar: "لابتوب عالي الأداء للعمل والترفيه.",
+      en: "High-performance laptop suitable for gaming and programming.",
+      ar: "لاب توب عالي الأداء مناسب للألعاب والبرمجة.",
     },
-    price: 1200,
+    price: "$1200",
+    category: { en: "Laptops", ar: "لابتوبات" },
+    images: ["/Headphones.webp", "/herobg.jpg", "/laptops.jpg"],
   },
   {
     id: 2,
-    title: {
-      en: "Gaming Laptop",
-      ar: "لابتوب ألعاب",
-    },
-    category: {
-      en: "Laptops",
-      ar: "لابتوبات",
-    },
-    image: "/gaming-laptop.jpg",
+    title: { en: "Laptop B", ar: "لاب توب B" },
     description: {
-      en: "Perfect for gaming enthusiasts.",
-      ar: "مثالي لعشاق الألعاب.",
+      en: "Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم طويلاً.",
     },
+    price: "$900",
+    category: { en: "Laptops", ar: "لابتوبات" },
+    images: [
+      "/herobg.jpg",
+      "/laptops.jpg",
+      "/Headphones.webp",
+      "/laptops.jpg",
+      "/Headphones.webp",
+      "/herobg.jpg",
+    ],
   },
   {
     id: 3,
-    title: {
-      en: "Ultrabook",
-      ar: "ألترا بوك",
-    },
-    category: {
-      en: "Laptops",
-      ar: "لابتوبات",
-    },
-    image: "/ultrabook.jpg",
+    title: { en: "Phone X", ar: "هاتف X" },
     description: {
-      en: "Lightweight and powerful ultrabook.",
-      ar: "ألترا بوك خفيف الوزن وقوي الأداء.",
+      en: "Smartphone with an amazing camera and fast performance.",
+      ar: "هاتف ذكي بكاميرا رائعة وأداء سريع.",
     },
+    price: "$800",
+    category: { en: "Phones", ar: "هواتف" },
+    images: ["/Headphones.webp", "/phones2.jpg", "/Headphones.webp"],
   },
   {
     id: 4,
-    title: {
-      en: "Business Laptop",
-      ar: "لابتوب أعمال",
-    },
-    category: {
-      en: "Laptops",
-      ar: "لابتوبات",
-    },
-    image: "/business-laptop.jpg",
+    title: { en: "Phone Y", ar: "هاتف Y" },
     description: {
-      en: "Ideal for professionals.",
-      ar: "مثالي للمحترفين.",
+      en: "Affordable smartphone with great battery life.",
+      ar: "هاتف ذكي بسعر مناسب مع بطارية طويلة العمر.",
     },
+    price: "$600",
+    category: { en: "Phones", ar: "هواتف" },
+    images: ["/phones3.jpg", "/phones4.jpg", "/Headphones.webp"],
   },
   {
     id: 5,
-    title: {
-      en: "Convertible Laptop",
-      ar: "لابتوب متحول",
-    },
-    category: {
-      en: "Laptops",
-      ar: "لابتوبات",
-    },
-    image: "/convertible-laptop.jpg",
+    title: { en: "Headphones A", ar: "سماعات A" },
     description: {
-      en: "Switch between tablet and laptop modes.",
-      ar: "يمكن التبديل بين وضعية التابلت واللابتوب.",
+      en: "Noise-cancelling headphones with high-quality sound.",
+      ar: "سماعات إلغاء الضوضاء مع صوت عالي الجودة.",
     },
+    price: "$150",
+    category: { en: "Headphones", ar: "سماعات" },
+    images: ["/headphones1.jpg", "/Headphones.webp", "/laptops.jpg"],
   },
   {
     id: 6,
-    title: {
-      en: "Student Laptop",
-      ar: "لابتوب للطلاب",
-    },
-    category: {
-      en: "Laptops",
-      ar: "لابتوبات",
-    },
-    image: "/student-laptop.jpg",
+    title: { en: "Headphones B", ar: "سماعات B" },
     description: {
-      en: "Affordable laptop for students.",
-      ar: "لابتوب بسعر معقول للطلاب.",
+      en: "Wireless headphones with exceptional sound quality.",
+      ar: "سماعات لاسلكية مع جودة صوت استثنائية.",
     },
+    price: "$200",
+    category: { en: "Headphones", ar: "سماعات" },
+    images: ["/headphones2.jpg", "/headphones3.jpg", "/Headphones.webp"],
   },
   {
     id: 7,
-    title: {
-      en: "MacBook",
-      ar: "ماك بوك",
-    },
-    category: {
-      en: "Laptops",
-      ar: "لابتوبات",
-    },
-    image: "/macbook.jpg",
+    title: { en: "Tablet A", ar: "تابلت A" },
     description: {
-      en: "Stylish and high-performance MacBook.",
-      ar: "ماك بوك أنيق وعالي الأداء.",
+      en: "Tablet with a large display and fast processor.",
+      ar: "تابلت بشاشة كبيرة ومعالج سريع.",
     },
+    price: "$350",
+    category: { en: "Tablets", ar: "تابلت" },
+    images: ["/tablet1.jpg", "/tablet2.jpg", "/laptops.jpg"],
   },
-
-  // منتجات هواتف
   {
     id: 8,
-    title: {
-      en: "Phone",
-      ar: "هاتف",
-    },
-    category: {
-      en: "Phones",
-      ar: "هواتف",
-    },
-    image: "/phones.jpg",
+    title: { en: "Tablet B", ar: "تابلت B" },
     description: {
-      en: "Latest smartphone with powerful features.",
-      ar: "أحدث هاتف ذكي بميزات قوية.",
+      en: "Compact tablet with great battery life.",
+      ar: "تابلت مدمج مع بطارية تدوم طويلاً.",
     },
+    price: "$300",
+    category: { en: "Tablets", ar: "تابلت" },
+    images: ["/tablet3.jpg", "/tablet4.jpg", "/Headphones.webp"],
   },
   {
     id: 9,
-    title: {
-      en: "Android Phone",
-      ar: "هاتف أندرويد",
-    },
-    category: {
-      en: "Phones",
-      ar: "هواتف",
-    },
-    image: "/android-phone.jpg",
+    title: { en: "Laptop C", ar: "لاب توب C" },
     description: {
-      en: "Fast Android device for everyday use.",
-      ar: "جهاز أندرويد سريع للاستخدام اليومي.",
+      en: "Laptop with an ultra-thin design and high performance.",
+      ar: "لاب توب بتصميم نحيف وأداء عالي.",
     },
+    price: "$1400",
+    category: { en: "Laptops", ar: "لابتوبات" },
+    images: ["/laptops2.jpg", "/laptops.jpg", "/phones1.jpg"],
   },
   {
     id: 10,
-    title: {
-      en: "iPhone",
-      ar: "آيفون",
-    },
-    category: {
-      en: "Phones",
-      ar: "هواتف",
-    },
-    image: "/iphone.jpg",
+    title: { en: "Phone Z", ar: "هاتف Z" },
     description: {
-      en: "Premium iOS experience.",
-      ar: "تجربة iOS الفاخرة.",
+      en: "Phone with 5G support and a stunning display.",
+      ar: "هاتف يدعم 5G مع شاشة مذهلة.",
     },
+    price: "$1200",
+    category: { en: "Phones", ar: "هواتف" },
+    images: ["/phones2.jpg", "/phones3.jpg", "/Headphones.webp"],
   },
   {
     id: 11,
-    title: {
-      en: "Budget Phone",
-      ar: "هاتف اقتصادي",
-    },
-    category: {
-      en: "Phones",
-      ar: "هواتف",
-    },
-    image: "/budget-phone.jpg",
+    title: { en: "Headphones C", ar: "سماعات C" },
     description: {
-      en: "Affordable phone for essential tasks.",
-      ar: "هاتف اقتصادي للمهام الأساسية.",
+      en: "Sports headphones with a comfortable fit.",
+      ar: "سماعات رياضية بتصميم مريح.",
     },
+    price: "$120",
+    category: { en: "Headphones", ar: "سماعات" },
+    images: ["/headphones4.jpg", "/headphones1.jpg", "/laptops.jpg"],
   },
   {
     id: 12,
-    title: {
-      en: "Gaming Phone",
-      ar: "هاتف ألعاب",
-    },
-    category: {
-      en: "Phones",
-      ar: "هواتف",
-    },
-    image: "/gaming-phone.jpg",
+    title: { en: "Headphones D", ar: "سماعات D" },
     description: {
-      en: "High-performance for mobile gaming.",
-      ar: "أداء عالي للألعاب المحمولة.",
+      en: "Studio headphones with superior sound quality.",
+      ar: "سماعات استوديو مع جودة صوت ممتازة.",
     },
+    price: "$300",
+    category: { en: "Headphones", ar: "سماعات" },
+    images: ["/headphones5.jpg", "/headphones2.jpg", "/Headphones.webp"],
   },
   {
     id: 13,
-    title: {
-      en: "5G Phone",
-      ar: "هاتف 5G",
-    },
-    category: {
-      en: "Phones",
-      ar: "هواتف",
-    },
-    image: "/5g-phone.jpg",
+    title: { en: "Tablet C", ar: "تابلت C" },
     description: {
-      en: "Enjoy fast 5G speeds.",
-      ar: "استمتع بسرعات 5G فائقة.",
+      en: "Tablet with a stylus and drawing features.",
+      ar: "تابلت مع قلم وخاصيات الرسم.",
     },
+    price: "$500",
+    category: { en: "Tablets", ar: "تابلت" },
+    images: ["/tablet5.jpg", "/tablet6.jpg", "/Headphones.webp"],
   },
   {
     id: 14,
-    title: {
-      en: "Foldable Phone",
-      ar: "هاتف قابل للطي",
-    },
-    category: {
-      en: "Phones",
-      ar: "هواتف",
-    },
-    image: "/foldable-phone.jpg",
+    title: { en: "Tablet D", ar: "تابلت D" },
     description: {
-      en: "Foldable design for portability.",
-      ar: "تصميم قابل للطي لسهولة الحمل.",
+      en: "Affordable tablet with great features.",
+      ar: "تابلت بسعر معقول مع ميزات رائعة.",
     },
+    price: "$250",
+    category: { en: "Tablets", ar: "تابلت" },
+    images: ["/tablet7.jpg", "/tablet8.jpg", "/laptops.jpg"],
   },
-
-  // منتجات سماعات
   {
     id: 15,
-    title: {
-      en: "Headphones",
-      ar: "سماعات",
-    },
-    category: {
-      en: "Headphones",
-      ar: "سماعات",
-    },
-    image: "/headphones.jpg",
+    title: { en: "Phone A", ar: "هاتف A" },
     description: {
-      en: "High-quality sound and comfort.",
-      ar: "جودة صوت عالية وراحة.",
+      en: "Smartphone with a sleek design and powerful camera.",
+      ar: "هاتف ذكي بتصميم أنيق وكاميرا قوية.",
     },
+    price: "$700",
+    category: { en: "Phones", ar: "هواتف" },
+    images: ["/phones4.jpg", "/phones5.jpg", "/Headphones.webp"],
   },
-  // ... (تابع باقي السماعات بنفس النمط)
-
-  // منتجات تابلت
   {
-    id: 22,
-    title: {
-      en: "Tablet",
-      ar: "تابلت",
-    },
-    category: {
-      en: "Tablets",
-      ar: "تابلت",
-    },
-    image: "/tablets.jpg",
+    id: 16,
+    title: { en: "Phone B", ar: "هاتف B" },
     description: {
-      en: "Portable and powerful tablet.",
-      ar: "تابلت محمول وقوي.",
+      en: "Phone with a great price-performance ratio.",
+      ar: "هاتف مع نسبة سعر إلى أداء ممتازة.",
     },
+    price: "$500",
+    category: { en: "Phones", ar: "هواتف" },
+    images: ["/phones6.jpg", "/phones7.jpg", "/laptops.jpg"],
   },
-  // ... (تابع باقي الأجهزة اللوحية بنفس النمط)
+  {
+    id: 17,
+    title: { en: "Laptop D", ar: "لاب توب D" },
+    description: {
+      en: "Laptop with advanced features and a high-definition screen.",
+      ar: "لاب توب مع ميزات متقدمة وشاشة عالية الدقة.",
+    },
+    price: "$1600",
+    category: { en: "Laptops", ar: "لابتوبات" },
+    images: ["/laptops4.jpg", "/laptops2.jpg", "/phones2.jpg"],
+  },
+  {
+    id: 18,
+    title: { en: "Headphones E", ar: "سماعات E" },
+    description: {
+      en: "Gaming headphones with immersive sound and microphone.",
+      ar: "سماعات ألعاب مع صوت غامر وميكروفون.",
+    },
+    price: "$180",
+    category: { en: "Headphones", ar: "سماعات" },
+    images: ["/headphones6.jpg", "/headphones3.jpg", "/laptops.jpg"],
+  },
+  {
+    id: 19,
+    title: { en: "Tablet E", ar: "تابلت E" },
+    description: {
+      en: "Versatile tablet for work and entertainment.",
+      ar: "تابلت متعدد الاستخدامات للعمل والترفيه.",
+    },
+    price: "$450",
+    category: { en: "Tablets", ar: "تابلت" },
+    images: ["/tablet9.jpg", "/tablet10.jpg", "/Headphones.webp"],
+  },
+  {
+    id: 20,
+    title: { en: "Phone C", ar: "هاتف C" },
+    description: {
+      en: "Phone with an outstanding camera for photography.",
+      ar: "هاتف بكاميرا رائعة للتصوير.",
+    },
+    price: "$850",
+    category: { en: "Phones", ar: "هواتف" },
+    images: ["/phones8.jpg", "/phones9.jpg", "/laptops.jpg"],
+  },
 ];

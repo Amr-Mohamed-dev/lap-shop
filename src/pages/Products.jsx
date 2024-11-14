@@ -1,13 +1,14 @@
 import { useState } from "react";
-import { productsData } from "../data/productsData"; // تأكد من أن هذا الملف يحتوي على البيانات الصحيحة
+import { productsData } from "../data/productsData";
 import { useTranslation } from "../hooks/useTranslation";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Products = () => {
   const { translate, language } = useTranslation();
   const [filter, setFilter] = useState("all");
+  const navigate = useNavigate();
 
-  // فلتر المنتجات حسب الفئة
   const filteredProducts =
     filter === "all"
       ? productsData
@@ -21,7 +22,15 @@ const Products = () => {
     setFilter(category);
   };
 
-  // مصفوفة الفئات المتاحة
+  const handleProductClick = (productId) => {
+    navigate(`/products/${productId}`);
+    console.log("====================================");
+    console.log(productId);
+    console.log("====================================");
+  };
+
+  console.log("Products data:", productsData);
+
   const categories = [
     { key: "all", label: translate("allProducts.filter.all") },
     { key: "laptops", label: translate("products.categories.laptops") },
@@ -37,7 +46,6 @@ const Products = () => {
           {translate("products.title")}
         </h2>
 
-        {/* الفلتر */}
         <div className="flex justify-center flex-wrap gap-2 mb-10">
           {categories.map((category) => (
             <button
@@ -53,18 +61,18 @@ const Products = () => {
           ))}
         </div>
 
-        {/* عرض المنتجات */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product) => (
               <motion.div
                 key={product.id}
-                className="dark:bg-gray-100 bg-gray-900 text-white dark:text-gray-900 p-6 rounded-lg shadow-md transition duration-300 hover:shadow-xl"
+                className="dark:bg-gray-100 bg-gray-900 text-white dark:text-gray-900 p-6 rounded-lg shadow-md transition duration-300 hover:shadow-xl cursor-pointer"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}>
+                transition={{ duration: 0.5 }}
+                onClick={() => handleProductClick(product.id)}>
                 <img
-                  src={product.image}
+                  src={product.images[0]} // Use first image in the array
                   alt={product.title[language]}
                   className="h-48 w-full object-cover rounded-lg mb-4 hover:-rotate-3 transition duration-300"
                 />
