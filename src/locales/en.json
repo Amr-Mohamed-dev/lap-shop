@@ -1,0 +1,37 @@
+{
+  "navbar": {
+    "home": { "text": "Home", "href": "/" },
+    "products": { "text": "Products", "href": "/products" },
+    "about": { "text": "About", "href": "#about" },
+    "contact": { "text": "Contact Us", "href": "#contact" }
+  },
+  "heroSection": {
+    "title": "Discover the Latest Tech at the Best Prices",
+    "description": "Shop from a wide selection of laptops and devices with top quality.",
+    "cta": "Browse Products"
+  },
+  "featuredProducts": {
+    "title": "Featured Products",
+    "description": "Discover the best deals on the latest tech devices.",
+    "viewAll": "View More"
+  },
+  "products": {
+    "title": "Our Best Products",
+    "description": "Browse a collection of the latest tech devices, including laptops, phones, accessories, and more.",
+    "viewAll": "View All Products",
+    "categories": {
+      "laptops": "Laptops",
+      "phones": "Phones",
+      "headphones": "Headphones",
+      "tablets": "Tablets"
+    }
+  },
+  "allProducts": {
+    "title": "Our Best Products",
+    "filter": {
+      "all": "All",
+      "laptops": "Laptops",
+      "phones": "Phones"
+    }
+  }
+}

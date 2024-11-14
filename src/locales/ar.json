@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "home": { "text": "Home", "href": "/" },
+    "products": { "text": "Products", "href": "/products" },
+    "about": { "text": "About", "href": "#about" },
+    "contact": { "text": "Contact Us", "href": "#contact" }
+  },
+  "heroSection": {
+    "title": "اكتشف أحدث التقنيات بأفضل الأسعار",
+    "description": "تسوق من مجموعة واسعة من اللابتوبات والأجهزة بأفضل جودة.",
+    "cta": "تصفح المنتجات"
+  },
+  "featuredProducts": {
+    "title": "منتجات مميزة",
+    "description": "استعرض مجموعة من أحدث الأجهزة التكنولوجية، بما في ذلك اللابتوبات، الهواتف، الإكسسوارات والمزيد.",
+    "viewAll": "عرض المزيد"
+  },
+  "products": {
+    "title": "أفضل المنتجات لدينا",
+    "description": "اكتشف أفضل العروض لدينا لأحدث الأجهزة.",
+    "viewAll": "عرض جميع المنتجات",
+    "categories": {
+      "laptops": "لابتوبات",
+      "phones": "هواتف",
+      "headphones": "سماعات",
+      "tablets": "تابلت"
+    }
+  },
+  "allProducts": {
+    "title": "منتجاتنا",
+    "filter": {
+      "all": "الكل",
+      "laptops": "لابتوبات",
+      "phones": "هواتف",
+      "headphones": "سماعات",
+      "tablets": "تابلت"
+    }
+  }
+}
