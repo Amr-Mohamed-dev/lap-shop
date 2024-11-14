@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { productsData } from "../data/productsData";
 import { useTranslation } from "../hooks/useTranslation";
 import { motion } from "framer-motion";
@@ -30,6 +30,10 @@ const Products = () => {
   };
 
   console.log("Products data:", productsData);
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // تمرير الشريط إلى أعلى الصفحة
+  }, []);
 
   const categories = [
     { key: "all", label: translate("allProducts.filter.all") },

@@ -10,6 +10,10 @@ const ProductDetails = () => {
   const product = productsData.find((p) => p.id === parseInt(id, 10));
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  useEffect(() => {
+    window.scrollTo(0, 0); // تمرير الشريط إلى أعلى الصفحة
+  }, []);
+
   // تحديث الصور عند تغيير اللغة
   useEffect(() => {
     setCurrentIndex(0); // إعادة ضبط الصورة الحالية عند تغيير اللغة

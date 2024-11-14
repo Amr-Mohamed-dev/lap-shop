@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 import { useTranslation } from "../hooks/useTranslation";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import useInView from "./UseInView";
+import { useNavigate } from "react-router-dom";
 
 const FeaturedProducts = () => {
+  const navigate = useNavigate();
+
   const { translate, language } = useTranslation();
   const [ref, isVisible] = useInView();
   const sectionVariants = {
@@ -95,7 +98,9 @@ const FeaturedProducts = () => {
 
         {/* زر "عرض المزيد" */}
         <div className="text-center mt-8 flex justify-center items-center">
-          <button className="bg-gray-900 dark:bg-white text-gray-100 dark:text-gray-900 px-6 py-3 rounded-lg flex items-center justify-center">
+          <button
+            onClick={() => navigate("/products")}
+            className="bg-gray-900 dark:bg-white text-gray-100 dark:text-gray-900 px-6 py-3 rounded-lg flex items-center justify-center">
             <span>{translate("featuredProducts.viewAll")}</span>
             {isArabic ? (
               <FaArrowLeft className="mr-2" />
