@@ -3,12 +3,23 @@ export const productsData = [
     id: 1,
     title: { en: "Laptop A", ar: "لاب توب A" },
     description: {
-      en: "High-performance laptop suitable for gaming and programming.",
-      ar: "لاب توب عالي الأداء مناسب للألعاب والبرمجة.",
+      en: "Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم طويلاً.",
     },
-    price: "$1200",
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
+    price: "$900",
     category: { en: "Laptops", ar: "لابتوبات" },
-    images: ["/Headphones.webp", "/herobg.jpg", "/laptops.jpg"],
+    images: [
+      "/herobg.jpg",
+      "/laptops.jpg",
+      "/Headphones.webp",
+      "/laptops.jpg",
+      "/Headphones.webp",
+      "/herobg.jpg",
+    ],
   },
   {
     id: 2,
@@ -16,6 +27,10 @@ export const productsData = [
     description: {
       en: "Portable laptop with a long battery life.",
       ar: "لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
     },
     price: "$900",
     category: { en: "Laptops", ar: "لابتوبات" },
@@ -35,6 +50,10 @@ export const productsData = [
       en: "Smartphone with an amazing camera and fast performance.",
       ar: "هاتف ذكي بكاميرا رائعة وأداء سريع.",
     },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     price: "$800",
     category: { en: "Phones", ar: "هواتف" },
     images: ["/Headphones.webp", "/phones2.jpg", "/Headphones.webp"],
@@ -42,6 +61,10 @@ export const productsData = [
   {
     id: 4,
     title: { en: "Phone Y", ar: "هاتف Y" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Affordable smartphone with great battery life.",
       ar: "هاتف ذكي بسعر مناسب مع بطارية طويلة العمر.",
@@ -53,6 +76,10 @@ export const productsData = [
   {
     id: 5,
     title: { en: "Headphones A", ar: "سماعات A" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Noise-cancelling headphones with high-quality sound.",
       ar: "سماعات إلغاء الضوضاء مع صوت عالي الجودة.",
@@ -64,6 +91,10 @@ export const productsData = [
   {
     id: 6,
     title: { en: "Headphones B", ar: "سماعات B" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Wireless headphones with exceptional sound quality.",
       ar: "سماعات لاسلكية مع جودة صوت استثنائية.",
@@ -75,6 +106,10 @@ export const productsData = [
   {
     id: 7,
     title: { en: "Tablet A", ar: "تابلت A" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Tablet with a large display and fast processor.",
       ar: "تابلت بشاشة كبيرة ومعالج سريع.",
@@ -86,9 +121,13 @@ export const productsData = [
   {
     id: 8,
     title: { en: "Tablet B", ar: "تابلت B" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Compact tablet with great battery life.",
-      ar: "تابلت مدمج مع بطارية تدوم طويلاً.",
+      ar: "تابلت مدمج مع بطارية تدوم طويلاً.تابلت مدمج مع بطارية تدوم طويلاً طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم ",
     },
     price: "$300",
     category: { en: "Tablets", ar: "تابلت" },
@@ -97,6 +136,10 @@ export const productsData = [
   {
     id: 9,
     title: { en: "Laptop C", ar: "لاب توب C" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Laptop with an ultra-thin design and high performance.",
       ar: "لاب توب بتصميم نحيف وأداء عالي.",
@@ -108,6 +151,10 @@ export const productsData = [
   {
     id: 10,
     title: { en: "Phone Z", ar: "هاتف Z" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Phone with 5G support and a stunning display.",
       ar: "هاتف يدعم 5G مع شاشة مذهلة.",
@@ -119,6 +166,10 @@ export const productsData = [
   {
     id: 11,
     title: { en: "Headphones C", ar: "سماعات C" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Sports headphones with a comfortable fit.",
       ar: "سماعات رياضية بتصميم مريح.",
@@ -130,6 +181,10 @@ export const productsData = [
   {
     id: 12,
     title: { en: "Headphones D", ar: "سماعات D" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Studio headphones with superior sound quality.",
       ar: "سماعات استوديو مع جودة صوت ممتازة.",
@@ -141,6 +196,10 @@ export const productsData = [
   {
     id: 13,
     title: { en: "Tablet C", ar: "تابلت C" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Tablet with a stylus and drawing features.",
       ar: "تابلت مع قلم وخاصيات الرسم.",
@@ -152,6 +211,10 @@ export const productsData = [
   {
     id: 14,
     title: { en: "Tablet D", ar: "تابلت D" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Affordable tablet with great features.",
       ar: "تابلت بسعر معقول مع ميزات رائعة.",
@@ -163,6 +226,10 @@ export const productsData = [
   {
     id: 15,
     title: { en: "Phone A", ar: "هاتف A" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Smartphone with a sleek design and powerful camera.",
       ar: "هاتف ذكي بتصميم أنيق وكاميرا قوية.",
@@ -174,6 +241,10 @@ export const productsData = [
   {
     id: 16,
     title: { en: "Phone B", ar: "هاتف B" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Phone with a great price-performance ratio.",
       ar: "هاتف مع نسبة سعر إلى أداء ممتازة.",
@@ -185,6 +256,10 @@ export const productsData = [
   {
     id: 17,
     title: { en: "Laptop D", ar: "لاب توب D" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Laptop with advanced features and a high-definition screen.",
       ar: "لاب توب مع ميزات متقدمة وشاشة عالية الدقة.",
@@ -196,6 +271,10 @@ export const productsData = [
   {
     id: 18,
     title: { en: "Headphones E", ar: "سماعات E" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Gaming headphones with immersive sound and microphone.",
       ar: "سماعات ألعاب مع صوت غامر وميكروفون.",
@@ -207,6 +286,10 @@ export const productsData = [
   {
     id: 19,
     title: { en: "Tablet E", ar: "تابلت E" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Versatile tablet for work and entertainment.",
       ar: "تابلت متعدد الاستخدامات للعمل والترفيه.",
@@ -218,6 +301,10 @@ export const productsData = [
   {
     id: 20,
     title: { en: "Phone C", ar: "هاتف C" },
+    largDescription: {
+      en: "Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.Portable laptop with a long battery life.",
+      ar: "لاب توب محمول مع بطارية تدوم لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً. لاب توب محمول مع بطارية تدوم طويلاً.",
+    },
     description: {
       en: "Phone with an outstanding camera for photography.",
       ar: "هاتف بكاميرا رائعة للتصوير.",

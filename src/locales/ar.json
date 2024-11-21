@@ -1,9 +1,24 @@
 {
   "navbar": {
-    "home": { "text": "Home", "href": "/" },
-    "products": { "text": "Products", "href": "/products" },
-    "about": { "text": "About", "href": "#about" },
-    "contact": { "text": "Contact Us", "href": "#contact" }
+    "home": { "text": "الرئيسية", "href": "/" },
+    "products": { "text": "المنتجات", "href": "/products" },
+    "about": { "text": "عننا", "href": "#about" },
+    "contact": { "text": "تواصل معنا", "href": "/contact" }
+  },
+  "ContactUsPage": {
+    "contactus": "تواصل معنا",
+    "title": "دعنا نتواصل",
+    "description": "هل لديك فكرة كبيرة أو علامة تجارية تريد تطويرها وتحتاج إلى المساعدة؟ ثم تواصل معنا، فنحن نود أن نسمع عن مشروعك ونقدم لك المساعدة المطلوبة.",
+    "Socials": "صفحاتنا الاجتماعية",
+    "Email": " البريد الالكتروني",
+    "Phone": "الهاتف",
+    "form": {
+      "name": "الاسم",
+      "phone": "الهاتف",
+      "email": "البريد الالكتروني",
+      "message": "رسالة",
+      "btn": "ارسال"
+    }
   },
   "heroSection": {
     "title": "اكتشف أحدث التقنيات بأفضل الأسعار",

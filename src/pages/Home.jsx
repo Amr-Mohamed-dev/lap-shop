@@ -4,11 +4,11 @@ import ScrollToTop from "../components/ScrollToTop";
 
 const Home = () => {
   return (
-    <>
+    <div className="dark:bg-gray-900">
       <HeroSection />
       <FeaturedProducts />
       <ScrollToTop />
-    </>
+    </div>
   );
 };
 

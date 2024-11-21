@@ -3,7 +3,22 @@
     "home": { "text": "Home", "href": "/" },
     "products": { "text": "Products", "href": "/products" },
     "about": { "text": "About", "href": "#about" },
-    "contact": { "text": "Contact Us", "href": "#contact" }
+    "contact": { "text": "Contact Us", "href": "/contact" }
+  },
+  "ContactUsPage": {
+    "contactus": "Contact Us",
+    "title": "Let's Get in Touch",
+    "description": "Do you have a great idea or a brand you want to develop and need help with? Then get in touch with us; we would love to hear about your project and provide the assistance you need.",
+    "Socials": "Our Social Pages",
+    "Email": "Email Address",
+    "Phone": "Phone Number",
+    "form": {
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email Address",
+      "message": "message",
+      "btn": "send"
+    }
   },
   "heroSection": {
     "title": "Discover the Latest Tech at the Best Prices",

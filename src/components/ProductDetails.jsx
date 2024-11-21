@@ -36,7 +36,7 @@ const ProductDetails = () => {
   };
 
   return (
-    <section className="pt-24 px-4 bg-white dark:bg-gray-900 h-full min-h-screen">
+    <section className="pt-24 px-4 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 h-full min-h-screen">
       <div className="container mx-auto">
         <h2 className="text-3xl font-semibold mb-6 text-center">
           {product.title[language]}
@@ -60,7 +60,7 @@ const ProductDetails = () => {
                   style={{ height: "400px" }}>
                   <img
                     src={image}
-                    key={language} // تغيير المفتاح عند تغيير اللغة
+                    key={image} // تغيير المفتاح عند تغيير اللغة
                     className="w-full h-full object-cover"
                     alt={`Product Image ${index + 1}`}
                   />
@@ -135,6 +135,7 @@ const ProductDetails = () => {
           <p className="mt-4 text-gray-700 dark:text-gray-300">
             {product.description[language]}
           </p>
+          <p>{product.largDescription[language]}</p>
         </div>
       </div>
     </section>
