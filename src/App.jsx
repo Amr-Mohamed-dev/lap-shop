@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import ProductDetails from "./components/ProductDetails";
 import ScrollToTop from "./components/ScrollToTop";
 import ContactUs from "./pages/ContactUs";
+import AboutPage from "./components/AboutPage";
 
 const App = () => {
   return (
@@ -32,13 +33,22 @@ const App = () => {
         }
       />
       <Route
+        path="/about"
+        element={
+          <>
+            <NavBar />
+            <AboutPage />
+            <ScrollToTop />
+            <Footer />
+          </>
+        }
+      />
+      <Route
         path="/contact"
         element={
-          <div className="dark:bg-gray-900">
+          <div className="dark:bg-primary">
             <NavBar />
             <ContactUs />
-            {/* <ScrollToTop /> */}
-            {/* <Footer /> */}
           </div>
         }
       />

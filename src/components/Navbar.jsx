@@ -93,7 +93,7 @@ const NavBar = () => {
             />
             <DialogPanel
               as={motion.div}
-              className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-400 dark:bg-gray-800 px-6 py-6 sm:max-w-sm text-gray-900 dark:text-white">
+              className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-400 dark:bg-gray-800 px-6 py-6 sm:max-w-sm text-primary dark:text-white">
               <div className="flex items-center justify-between">
                 <XMarkIcon
                   width={20}

@@ -23,7 +23,8 @@ const FeaturedProducts = () => {
   return (
     <section
       ref={ref}
-      className={`py-16 px-4 dark:bg-gray-900 bg-white text-gray-900`}>
+      id={`featured-products`}
+      className={`py-16 px-4 dark:bg-primary bg-secondary text-primary dark:text-secondary`}>
       <motion.div
         variants={sectionVariants}
         initial="hidden"
@@ -39,7 +40,7 @@ const FeaturedProducts = () => {
         {/* قائمة المنتجات المميزة */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* مثال على منتج مميز */}
-          <div className="dark:bg-gray-100 bg-gray-900 text-white dark:text-gray-900 p-6 rounded-lg shadow-md transition duration-300 hover:shadow-xl">
+          <div className="dark:bg-secondary bg-primary text-secondary dark:text-primary p-6 rounded-lg shadow-md transition duration-300 hover:shadow-xl">
             <img
               src="/laptops.jpg"
               alt="Product 1"
@@ -48,12 +49,12 @@ const FeaturedProducts = () => {
             <h3 className="text-xl font-semibold">
               {translate("products.title")}
             </h3>
-            <p className="text-white dark:text-gray-900 italic">
+            <p className="text-secondary dark:text-primary italic">
               {translate("products.categories.laptops")}
             </p>
           </div>
 
-          <div className="dark:bg-gray-100 bg-gray-900 text-white dark:text-gray-900 p-6 rounded-lg shadow-md transition duration-300 hover:shadow-xl">
+          <div className="dark:bg-secondary bg-primary text-secondary dark:text-primary p-6 rounded-lg shadow-md transition duration-300 hover:shadow-xl">
             <img
               src="/phones.jpg"
               alt="Product 2"
@@ -62,12 +63,12 @@ const FeaturedProducts = () => {
             <h3 className="text-xl font-semibold">
               {translate("products.title")}
             </h3>
-            <p className="text-white dark:text-gray-900 italic">
+            <p className="text-secondary dark:text-primary italic">
               {translate("products.categories.phones")}
             </p>
           </div>
 
-          <div className="dark:bg-gray-100 bg-gray-900 text-white dark:text-gray-900 p-6 rounded-lg shadow-md transition duration-300 hover:shadow-xl">
+          <div className="dark:bg-secondary bg-primary text-secondary dark:text-primary p-6 rounded-lg shadow-md transition duration-300 hover:shadow-xl">
             <img
               src="/Headphones.webp"
               alt="Product 3"
@@ -76,12 +77,12 @@ const FeaturedProducts = () => {
             <h3 className="text-xl font-semibold">
               {translate("products.title")}
             </h3>
-            <p className="text-white dark:text-gray-900 italic">
+            <p className="text-secondary dark:text-primary italic">
               {translate("products.categories.headphones")}
             </p>
           </div>
 
-          <div className="dark:bg-gray-100 bg-gray-900 text-white dark:text-gray-900 p-6 rounded-lg shadow-md transition duration-300 hover:shadow-xl">
+          <div className="dark:bg-secondary bg-primary text-secondary dark:text-primary p-6 rounded-lg shadow-md transition duration-300 hover:shadow-xl">
             <img
               src="/tablets.avif"
               alt="Product 3"
@@ -90,7 +91,7 @@ const FeaturedProducts = () => {
             <h3 className="text-xl font-semibold">
               {translate("products.title")}
             </h3>
-            <p className="text-white dark:text-gray-900 italic">
+            <p className="text-secondary dark:text-primary italic">
               {translate("products.categories.tablets")}
             </p>
           </div>
@@ -100,7 +101,7 @@ const FeaturedProducts = () => {
         <div className="text-center mt-8 flex justify-center items-center">
           <button
             onClick={() => navigate("/products")}
-            className="bg-gray-900 dark:bg-white text-gray-100 dark:text-gray-900 px-6 py-3 rounded-lg flex items-center justify-center">
+            className="bg-primary dark:bg-secondary text-secondary dark:text-primary px-6 py-3 rounded-lg flex items-center justify-center">
             <span>{translate("featuredProducts.viewAll")}</span>
             {isArabic ? (
               <FaArrowLeft className="mr-2" />

@@ -4,7 +4,7 @@ import ScrollToTop from "../components/ScrollToTop";
 
 const Home = () => {
   return (
-    <div className="dark:bg-gray-900">
+    <div className="dark:bg-primary">
       <HeroSection />
       <FeaturedProducts />
       <ScrollToTop />

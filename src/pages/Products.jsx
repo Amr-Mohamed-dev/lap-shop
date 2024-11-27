@@ -44,7 +44,7 @@ const Products = () => {
   ];
 
   return (
-    <section className="pt-24 px-4 bg-white dark:bg-gray-900 h-full">
+    <section className="pt-24 px-4 bg-secondary dark:bg-primary text-primary dark:text-secondary h-full min-h-screen">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-semibold mb-6">
           {translate("products.title")}
@@ -56,8 +56,8 @@ const Products = () => {
               key={category.key}
               className={`px-4 py-2 rounded-lg ${
                 filter === category.key
-                  ? "bg-gray-900 text-white"
-                  : "bg-gray-200 dark:bg-gray-700 text-gray-900"
+                  ? "bg-primary text-secondary"
+                  : "bg-iconsBg dark:bg-iconsBg text-primary dark:text-secondary"
               }`}
               onClick={() => handleFilterChange(category.key)}>
               {category.label}
@@ -70,7 +70,7 @@ const Products = () => {
             filteredProducts.map((product) => (
               <motion.div
                 key={product.id}
-                className="dark:bg-gray-100 bg-gray-900 text-white dark:text-gray-900 p-6 rounded-lg shadow-md transition duration-300 hover:shadow-xl cursor-pointer"
+                className="dark:bg-secondary bg-primary text-secondary dark:text-primary p-6 rounded-lg shadow-md transition duration-300 hover:shadow-xl cursor-pointer"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -87,7 +87,7 @@ const Products = () => {
               </motion.div>
             ))
           ) : (
-            <p className="text-xl text-gray-500">
+            <p className="text-xl text-third">
               {translate("products.noProducts")}
             </p>
           )}

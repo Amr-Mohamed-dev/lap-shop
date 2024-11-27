@@ -31,7 +31,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="dark:bg-gray-900 bg-white py-6 " dir="ltr" ref={ref}>
+    <footer className="dark:bg-primary bg-white py-6 " dir="ltr" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
           className="flex justify-center space-x-4"

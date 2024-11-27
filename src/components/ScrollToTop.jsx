@@ -12,8 +12,7 @@ const ScrollToTop = () => {
       setShowButton(false);
     }
   };
- 
-  
+
   const handleScrollTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
@@ -29,7 +28,7 @@ const ScrollToTop = () => {
     <div>
       {showButton && (
         <motion.button
-          className="fixed bottom-5 right-5  text-md bg-gray-900 dark:bg-white text-gray-100 dark:text-gray-900 p-4 rounded-full z-50 hover:bg-fourth hover:text-black transition-all duration-300"
+          className="fixed bottom-5 right-5  text-md bg-primary dark:bg-white text-secondary dark:text-primary p-4 rounded-full z-50 hover:bg-fourth hover:text-black transition-all duration-300"
           onClick={handleScrollTop}
           initial={{ y: 0 }}
           animate={{ y: ["0px", "-10px", "0px"] }}
@@ -53,8 +52,7 @@ const ScrollToTop = () => {
                 repeatType: "loop",
                 ease: "easeInOut",
               },
-            }}
-          >
+            }}>
             <HiArrowSmUp />
           </motion.div>
         </motion.button>

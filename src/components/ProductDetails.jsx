@@ -36,7 +36,7 @@ const ProductDetails = () => {
   };
 
   return (
-    <section className="pt-24 px-4 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 h-full min-h-screen">
+    <section className="pt-24 px-4 bg-white dark:bg-primary text-primary dark:text-secondary h-full min-h-screen">
       <div className="container mx-auto">
         <h2 className="text-3xl font-semibold mb-6 text-center">
           {product.title[language]}
@@ -76,7 +76,7 @@ const ProductDetails = () => {
                   onClick={() => setCurrentIndex(index)}
                   className={`w-3 h-3 rounded-full ${
                     index === currentIndex
-                      ? "bg-gray-900"
+                      ? "bg-primary"
                       : "bg-gray-400 hover:bg-gray-600"
                   }`}></button>
               ))}

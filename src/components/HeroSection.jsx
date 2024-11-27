@@ -17,7 +17,9 @@ const HeroSection = () => {
         <p className="text-lg md:text-2xl mb-8">
           {translate("heroSection.description")}
         </p>
-        <button className="px-6 py-3 bg-gray-900 dark:bg-white text-gray-100 dark:text-gray-900 font-semibold rounded ">
+        <button
+          onClick={`href='#featured-products'`}
+          className="px-6 py-3 bg-primary dark:bg-white text-secondary dark:text-primary font-semibold rounded ">
           {translate("heroSection.cta")}
         </button>
       </div>

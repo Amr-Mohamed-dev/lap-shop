@@ -2,7 +2,7 @@
   "navbar": {
     "home": { "text": "Home", "href": "/" },
     "products": { "text": "Products", "href": "/products" },
-    "about": { "text": "About", "href": "#about" },
+    "about": { "text": "About", "href": "/about" },
     "contact": { "text": "Contact Us", "href": "/contact" }
   },
   "ContactUsPage": {
@@ -12,6 +12,20 @@
     "Socials": "Our Social Pages",
     "Email": "Email Address",
     "Phone": "Phone Number",
+    "address": {
+      "EgyptAddress": {
+        "title": "Egypt Address",
+        "street": "34 - Al-Maqreezi Street - Roxy - Heliopolis",
+        "city": "Cairo",
+        "country": "Egypt"
+      },
+      "UaeAddress": {
+        "title": "UAE Address",
+        "street": "Al Ghubayba Area - It Center - Shop No. 20",
+        "city": "Sharjah",
+        "country": "United Arab Emirates"
+      }
+    },
     "form": {
       "name": "Name",
       "phone": "Phone",
@@ -47,6 +61,23 @@
       "all": "All",
       "laptops": "Laptops",
       "phones": "Phones"
+    }
+  },
+  "AboutPage": {
+    "title": { "text": "About Us" },
+    "description": {
+      "text": "We specialize in selling the latest electronics, including laptops, mobile phones, headphones, and other accessories. We ensure top quality for our customers with competitive prices and excellent services."
+    },
+    "branches": {
+      "title": { "text": "Our Branches" },
+      "locations": {
+        "egypt": { "text": "Egypt Branch" },
+        "uae": { "text": "UAE Branch" }
+      }
+    },
+    "mission": {
+      "title": { "text": "Our Mission" },
+      "text": "Our goal is to lead the electronics market by offering reliable products and unmatched customer service."
     }
   }
 }
