@@ -40,11 +40,13 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="pt-24 px-4 bg-secondary dark:bg-primary h-screen" ref={ref}>
+    <div
+      className="pt-24 px-4 pb-11 bg-secondary dark:bg-primary h-full"
+      ref={ref}>
       <h1 className="text-4xl pb-7 font-bold text-center text-primary dark:text-secondary">
         {translate("ContactUsPage.contactus")}
       </h1>
-      <div className="grid sm:grid-cols-2 items-start gap-14 p-8 mx-auto max-w-4xl bg-secondary dark:bg-primary shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] dark:shadow-[0_2px_10px_-3px_rgba(255,255,255,0.3)] rounded-md font-[sans-serif]">
+      <div className="grid sm:grid-cols-2 items-start gap-14 p-5  mx-auto max-w-4xl bg-secondary dark:bg-primary shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] dark:shadow-[0_2px_10px_-3px_rgba(255,255,255,0.3)] rounded-md font-[sans-serif]">
         <div>
           <h1 className="text-primary dark:text-secondary text-2xl font-extrabold">
             {" "}
@@ -53,7 +55,7 @@ const ContactUs = () => {
           <p className="text-sm text-third mt-4">
             {translate("ContactUsPage.description")}
           </p>
-          <div className="mt-5">
+          {/* <div className="mt-5">
             <h2 className="text-primary dark:text-secondary text-base font-bold">
               {translate("ContactUsPage.Phone")}
             </h2>
@@ -69,8 +71,11 @@ const ContactUs = () => {
                 </a>
               </li>
             </ul>
-          </div>
-          <div className="mt-1">
+          </div> */}
+          {/* Branches */}
+          <Branches />
+
+          <div className="mt-5">
             <h2 className="text-primary dark:text-secondary text-base font-bold">
               {translate("ContactUsPage.Email")}
             </h2>
@@ -97,11 +102,8 @@ const ContactUs = () => {
               </li>
             </ul>
           </div>
-          {/* Branches */}
-          <Branches />
-
           {/* socials  */}
-          <div className="mt-12">
+          <div className="mt-7">
             <h2 className="text-primary dark:text-secondary text-base font-bold">
               {translate("ContactUsPage.Socials")}
             </h2>
